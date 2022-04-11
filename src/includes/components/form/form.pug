@@ -1,0 +1,14 @@
+mixin form(id)
+    form.form(id= id)
+        .form__container
+            .form__heading
+                h2.form__title Title Form
+            .form__content
+                .form__field
+                    label.form__label Имя
+                    input.form__input(type="text" placeholder="Ваше имя")
+                .form__field
+                    label.form__label Номер телефона
+                    input.form__input(type="text" placeholder="+7 (916) 777-77-77")
+            .form__submit
+                button(type="submit").form__button Отправить

@@ -1,0 +1,20 @@
+include ./helpers/mixins
+
+include ./../includes/components/header/header
+include ./../includes/components/modal/modal
+include ./../includes/components/form/form
+
+include ./../includes/blocks/intro/intro
+
+doctype html
+html(lang="en")
+	+head('title')
+	body
+		+header
+		+intro
+		+modal('m1')
+			+form('f1')
+		+modal('m2')
+		+modal('m3')
+		block scripts
+			script(src="./js/main.js")

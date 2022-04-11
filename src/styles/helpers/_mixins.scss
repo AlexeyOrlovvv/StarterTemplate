@@ -1,0 +1,11 @@
+@mixin heading($position) {
+    display: flex;
+    justify-content: #{$position};
+    @content
+}
+ 
+@mixin title($fontSize) {
+    font-size: #{$fontSize};
+    @content
+}
+

@@ -1,0 +1,10 @@
+mixin modal(id)
+    .modal(id= id)
+        .modal__container
+            .modal__inner
+                .modal__leave
+                    button(type="button").button_closeModal
+                        svg.icon_cross
+                            use(xlink:href="img/sprites/sprite.svg#icon_cross")
+                .modal__content
+                    block

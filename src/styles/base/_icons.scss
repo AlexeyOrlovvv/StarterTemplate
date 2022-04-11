@@ -1,0 +1,9 @@
+.icon_cross {
+    width: rem(20);
+    height: rem(20);
+    fill: #FFF;
+    opacity: .5;
+    &:hover {
+        opacity: 1;
+    }
+}
