@@ -1,11 +1,30 @@
 @mixin heading($position) {
     display: flex;
     justify-content: #{$position};
-    @content
 }
  
 @mixin title($fontSize) {
     font-size: #{$fontSize};
-    @content
 }
 
+@mixin label($fontSize) {
+    font-size: $fontSize;
+}
+
+@mixin input($border, $borderRadius, $height) {
+    border: $border;
+    border-radius: $borderRadius;
+    height: $height;
+    width: 100%;
+}
+
+
+@mixin button($width, $height, $fontSize, $backgroundColor) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    background-color: $backgroundColor;
+}

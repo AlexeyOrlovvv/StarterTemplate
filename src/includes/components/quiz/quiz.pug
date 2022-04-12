@@ -1,0 +1,18 @@
+include ./../form/form
+
+mixin quiz
+    .quiz
+        .quiz__container
+            .quiz__heading
+                h2.quiz__title Quiz Title
+            .quiz__content
+                .quiz__progress(data-steps=1)
+                    .quiz__progress-completed
+                .quiz__poll
+                    .quiz__question
+                    .quiz__answers
+                    .quiz__controls
+                        button(type="button").quiz__button.quiz__button_prevStep Назад
+                        button(type="button").quiz__button.quiz__button_nextStep Вперед
+                +formQuiz('formQuiz')
+                        

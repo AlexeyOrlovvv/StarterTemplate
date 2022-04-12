@@ -1,6 +1,7 @@
 include ./helpers/mixins
 
 include ./../includes/components/header/header
+include ./../includes/components/quiz/quiz
 include ./../includes/components/modal/modal
 include ./../includes/components/form/form
 
@@ -10,11 +11,6 @@ doctype html
 html(lang="en")
 	+head('title')
 	body
-		+header
-		+intro
-		+modal('m1')
-			+form('f1')
-		+modal('m2')
-		+modal('m3')
+		+quiz
 		block scripts
 			script(src="./js/main.js")
